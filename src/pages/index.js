@@ -16,10 +16,13 @@ const IndexPage = ({ data }) => (
       title="Scoopy's Cafe"
     />
     <Info />
-    <Menu items={data.menu} />
+    {
+      //<Menu items={data.menu} />
+    }
     <Product items={data.product} />
   </Layout>
 )
+
 export const query = graphql`
   {
     img: file(relativePath: { eq: "backgroundimage.jpg" }) {

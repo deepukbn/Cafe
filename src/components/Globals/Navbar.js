@@ -2,6 +2,7 @@ import React, { Component } from "react"
 import { Link } from "gatsby"
 import logo from "../../images/logo.svg"
 import { FaCartArrowDown } from "react-icons/fa"
+import "./Navbar.css"
 
 export default class Navbar extends Component {
   state = {
@@ -25,6 +26,11 @@ export default class Navbar extends Component {
       },
       {
         id: 4,
+        path: "/menus",
+        text: "menus",
+      },
+      {
+        id: 5,
         path: "/contactus",
         text: "Contact us",
       },
@@ -63,10 +69,27 @@ export default class Navbar extends Component {
                 </li>
               )
             })}
+            <li className="nav-item">
+              <a
+                href="#"
+                class="nav-link text-capitalize snipcart-user-profile"
+              >
+                <span>Profile</span>
+              </a>
+            </li>
+            <li className="nav-item">
+              <a
+                href="#"
+                class=" nav-link text-capitalize snipcart-user-logout"
+              >
+                Logout
+              </a>
+            </li>
             <li className="nav-item ml-sm-20">
               <FaCartArrowDown
                 className="cart-icon
-                            snipcart-checkout"
+                            snipcart-checkout
+                            snipcart-summary"
               />
             </li>
           </ul>
