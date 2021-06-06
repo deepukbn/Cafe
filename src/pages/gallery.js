@@ -22,7 +22,7 @@ const GalleryPage = ({ data }) => {
 
 export const query = graphql`
   {
-    img: file(relativePath: { eq: "about3.jpg" }) {
+    img: file(relativePath: { eq: "gallerydee.jpg" }) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid

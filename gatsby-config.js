@@ -26,10 +26,12 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-plugin-snipcart",
+      resolve: "gatsby-plugin-snipcart-advanced",
       options: {
-        apiKey: process.env.SNIPCART_API,
+        publicApiKey: process.env.SNIPCART_API,
         autopop: true,
+        useSideCart: true,
+        templatesUrl: "http://localhost:8000/#",
       },
     },
     `gatsby-transformer-sharp`,

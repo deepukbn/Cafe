@@ -4,7 +4,7 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import BackgroundSection from "../components/Globals/BackgroundSection"
-import Info from "../components/Home/info"
+import Aboutus from "../components/Home/Aboutus"
 
 const AboutPage = ({ data }) => (
   <Layout>
@@ -14,13 +14,13 @@ const AboutPage = ({ data }) => (
       title="about us"
       styleClass="about-background"
     />
-    <Info />
+    <Aboutus />
   </Layout>
 )
 
 export const query = graphql`
   {
-    img: file(relativePath: { eq: "about3.jpg" }) {
+    img: file(relativePath: { eq: "aboutusdee.jpg" }) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid

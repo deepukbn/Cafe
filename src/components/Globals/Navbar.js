@@ -17,7 +17,7 @@ export default class Navbar extends Component {
       {
         id: 2,
         path: "/about",
-        text: "about",
+        text: "about us",
       },
       {
         id: 3,
@@ -27,12 +27,12 @@ export default class Navbar extends Component {
       {
         id: 4,
         path: "/menus",
-        text: "menus",
+        text: "menu",
       },
       {
         id: 5,
         path: "/contactus",
-        text: "Contact us",
+        text: "Reach us",
       },
     ],
   }
@@ -69,22 +69,24 @@ export default class Navbar extends Component {
                 </li>
               )
             })}
-            <li className="nav-item">
-              <a
-                href="#"
-                class="nav-link text-capitalize snipcart-user-profile"
-              >
-                <span>Profile</span>
-              </a>
-            </li>
-            <li className="nav-item">
-              <a
-                href="#"
-                class=" nav-link text-capitalize snipcart-user-logout"
-              >
-                Logout
-              </a>
-            </li>
+            {
+              // <li className="nav-item">
+              //   <a
+              //     href="#"
+              //     class="nav-link text-capitalize snipcart-user-profile"
+              //   >
+              //     <span>Profile</span>
+              //   </a>
+              // </li>
+              // <li className="nav-item">
+              //   <a
+              //     href="#"
+              //     class=" nav-link text-capitalize snipcart-user-logout"
+              //   >
+              //     Logout
+              //   </a>
+              // </li>
+            }
             <li className="nav-item ml-sm-20">
               <FaCartArrowDown
                 className="cart-icon

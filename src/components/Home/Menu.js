@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import Title from "../Globals/Title"
 import Img from "gatsby-background-image"
+import { FaCartArrowDown } from "react-icons/fa"
 
 const getCategories = items => {
   let tempItems = items.map(items => {

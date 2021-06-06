@@ -8,6 +8,7 @@ import Info from "../components/Home/info"
 import Menu from "../components/Home/Menu"
 import Product from "../components/Home/Product"
 import Contact from "../components/Home/Contact"
+
 const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" keywords={["gatsby", "application", "react"]} />

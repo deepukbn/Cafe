@@ -10,7 +10,7 @@ const contactusPage = ({ data }) => (
     <SEO title="Home" keywords={["gatsby", "application", "react"]} />
     <BackgroundSection
       img={data.img.childImageSharp.fluid}
-      title="C O N T A C T"
+      title=" "
       styleClass="contact-background"
     />
 
@@ -20,7 +20,7 @@ const contactusPage = ({ data }) => (
 
 export const query = graphql`
   {
-    img: file(relativePath: { eq: "contact1.jpeg" }) {
+    img: file(relativePath: { eq: "contactusdee.jpg" }) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid
