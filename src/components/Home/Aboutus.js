@@ -32,8 +32,6 @@ const Aboutus = ({ data }) => {
                 Address:Scoopy's Cafe 10th Cross, Shankarmutt Road, K R Puram,
                 Hassan
               </h3>
-            </div>
-            <div className="col-10 col-sm-8 mx-auto text-center">
               <h3>Phone Number:8277322858</h3>
             </div>
           </div>
