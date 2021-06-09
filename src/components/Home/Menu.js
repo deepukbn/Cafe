@@ -18,9 +18,14 @@ export default class Menu extends Component {
     this.state = {
       items: props.items.edges,
       CoffeeItem: props.items.edges,
+
       categories: getCategories(props.items.edges),
     }
+    {
+      console.log(props.items.edges)
+    }
   }
+
   handleItems = category => {
     let tempItems = [...this.state.items]
     if (category === "all") {

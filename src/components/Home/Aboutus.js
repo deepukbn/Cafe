@@ -1,10 +1,13 @@
 import React from "react"
 import Title from "../Globals/Title"
 import Maps from "../../images/Maps.png"
+import { Link, graphql } from "gatsby"
+import BackgroundSection from "../Globals/BackgroundSection"
 
-const Aboutus = () => {
+const Aboutus = ({ data }) => {
   return (
     <div>
+      {console.log(data)}
       <section className="py-5">
         <div className="container">
           <Title title="Our Mission" />
@@ -29,16 +32,35 @@ const Aboutus = () => {
                 Address:Scoopy's Cafe 10th Cross, Shankarmutt Road, K R Puram,
                 Hassan
               </h3>
+            </div>
+            <div className="col-10 col-sm-8 mx-auto text-center">
               <h3>Phone Number:8277322858</h3>
             </div>
           </div>
         </div>
-        <a href="https://goo.gl/maps/gfJ5bdX9x1dAQTY57">
-          <img src={Maps}></img>
-        </a>
       </section>
+
+      {
+        // <BackgroundSection
+        //   img={data.img.childImageSharp.fluid}
+        //   title="about us"
+        //   styleClass="about-background"
+        // />
+      }
     </div>
   )
 }
+
+export const query = graphql`
+  {
+    img: file(relativePath: { eq: "backgroundimage.jpg" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`
 
 export default Aboutus

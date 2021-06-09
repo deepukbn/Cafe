@@ -19,6 +19,7 @@ const IndexPage = ({ data }) => (
     <Info />
     {
       //<Menu items={data.menu} />
+      console.log(data)
     }
     <Product items={data.product} />
   </Layout>
