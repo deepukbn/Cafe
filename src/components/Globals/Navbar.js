@@ -70,14 +70,7 @@ export default class Navbar extends Component {
               )
             })}
             {
-              // <li className="nav-item">
-              //   <a
-              //     href="#"
-              //     class="nav-link text-capitalize snipcart-user-profile"
-              //   >
-              //     <span>Profile</span>
-              //   </a>
-              // </li>
+              //<li className="nav-item">
               // <li className="nav-item">
               //   <a
               //     href="#"
