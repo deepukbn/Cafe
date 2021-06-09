@@ -1,5 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
+
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import BackgroundSection from "../components/Globals/BackgroundSection"
@@ -14,27 +15,12 @@ const AboutPage = ({ data }) => (
       styleClass="about-background"
     />
     <Aboutus />
-    <a href="https://goo.gl/maps/gfJ5bdX9x1dAQTY57">
-      <BackgroundSection
-        img={data.map.childImageSharp.fluid}
-        title=" "
-        styleClass="about-background"
-      />
-    </a>
   </Layout>
 )
 
 export const query = graphql`
   {
     img: file(relativePath: { eq: "aboutusdee.jpg" }) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-
-    map: file(relativePath: { eq: "Maps.png" }) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid

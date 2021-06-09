@@ -31,7 +31,6 @@ module.exports = {
         publicApiKey: process.env.SNIPCART_API,
         autopop: true,
         useSideCart: true,
-        currency: "inr",
         templatesUrl: "http://localhost:8000/#",
       },
     },
