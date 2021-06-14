@@ -33,9 +33,6 @@ const Aboutus = () => {
             </div>
           </div>
         </div>
-        <a href="https://goo.gl/maps/gfJ5bdX9x1dAQTY57">
-          <img src={Maps}></img>
-        </a>
       </section>
     </div>
   )

@@ -31,7 +31,7 @@ module.exports = {
         publicApiKey: process.env.SNIPCART_API,
         autopop: true,
         useSideCart: true,
-        templatesUrl: "http://localhost:8000/#",
+        currency: "inr",
       },
     },
     `gatsby-transformer-sharp`,

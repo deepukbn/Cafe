@@ -21,7 +21,7 @@ const Layout = ({ children }) => (
     <Navbar />
     {children}
     <a
-      href="https://wa.me/918792851713"
+      href="https://wa.me/+918792851713"
       className="whatsapp_float"
       target="_blank"
       rel="noopener noreferrer"
