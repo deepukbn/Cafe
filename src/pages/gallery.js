@@ -10,11 +10,13 @@ const GalleryPage = ({ data }) => {
     <Layout>
       <SEO title="Home" keywords={["gatsby", "application", "react"]} />
 
-      <BackgroundSection
-        img={data.img.childImageSharp.fluid}
-        title="SCOOPY'S CAFE"
-        styleClass="about-background"
-      />
+      {
+        // <BackgroundSection
+        //   // img={data.img.childImageSharp.fluid}
+        //   title="SCOOPY'S CAFE"
+        //   styleClass="about-background"
+        // />
+      }
       <Gallery />
     </Layout>
   )
