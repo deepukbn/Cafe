@@ -2,7 +2,7 @@ import React from "react"
 import "./Footer.css"
 import "../bootstrap.min.css"
 import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa"
-import { SiWhatsapp } from "react-icons/si"
+import { Link } from "gatsby"
 
 export default function Footer() {
   return (
@@ -23,7 +23,8 @@ export default function Footer() {
             <h6>Site Maintained By:</h6>
             <p className="text-justify">
               Department of Information Science and Engineering<br></br>
-              Malnad College of Engineering, Hassan
+              Malnad College of Engineering, Hassan<br></br>
+              Phone No: 9449738515
             </p>
           </div>
 
@@ -44,10 +45,16 @@ export default function Footer() {
             <h6>Quick Links</h6>
             <ul className="footer-links">
               <li>
-                <a href="#">About Us</a>
+                <Link to="/about">About Us</Link>
               </li>
               <li>
-                <a href="#">Contact Us</a>
+                <Link to="/gallery">Gallery</Link>
+              </li>
+              <li>
+                <Link to="/menus">Menu</Link>
+              </li>
+              <li>
+                <Link to="/contactus">Contact Us</Link>
               </li>
             </ul>
           </div>
@@ -65,23 +72,33 @@ export default function Footer() {
           <div className="col-md-4 col-sm-6 col-xs-12">
             <ul className="social-icons">
               <li>
-                <a className="facebook" href="#">
+                <a
+                  className="facebook"
+                  href="https://www.facebook.com/pages/Cloud-9/201093230279131"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <FaFacebookF />
                 </a>
               </li>
               <li>
-                <a className="twitter" href="#">
+                <a
+                  className="twitter"
+                  href="https://twitter.com/SUMITHDB1?s=08"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <FaTwitter></FaTwitter>
                 </a>
               </li>
               <li>
-                <a className="instagram" href="#">
+                <a
+                  className="instagram"
+                  href="https://www.instagram.com/chandan_h_r/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <FaInstagram></FaInstagram>
-                </a>
-              </li>
-              <li>
-                <a className="whatsapp" href="#">
-                  <SiWhatsapp></SiWhatsapp>
                 </a>
               </li>
             </ul>

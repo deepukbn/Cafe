@@ -1,11 +1,8 @@
-import { usseStaticQuery, graphql } from "gatsby"
 import React from "react"
 import Carousel from "react-bootstrap/Carousel"
-import Img from "gatsby-image"
 import Slide1 from "../../images/Slide1.jpeg"
 import Slide2 from "../../images/Slide2.jpeg"
 import Slide3 from "../../images/Slide3.jpeg"
-import Slide4 from "../../images/Slide4.jpeg"
 import Scoopys from "../../images/Scoopys.jpg"
 import S1 from "../../images/1.png"
 import S2 from "../../images/2.png"
@@ -18,7 +15,7 @@ import S8 from "../../images/8.png"
 
 const Gallery = ({ data }) => {
   return (
-    <div>
+    <div style={{ margin: "7%" }}>
       <Carousel nextLabel="" prevLabel="" indicators>
         <Carousel.Item>
           <img
@@ -35,7 +32,7 @@ const Gallery = ({ data }) => {
             height={600}
             className="d-block w-100"
             src={Slide1}
-            alt="first image"
+            alt="second image"
           />
         </Carousel.Item>
         <Carousel.Item>
@@ -44,7 +41,7 @@ const Gallery = ({ data }) => {
             width={900}
             height={600}
             src={Slide2}
-            alt="first image"
+            alt="third image"
           />
         </Carousel.Item>
         <Carousel.Item>
@@ -53,7 +50,7 @@ const Gallery = ({ data }) => {
             width={900}
             height={600}
             src={Slide3}
-            alt="first image"
+            alt="fourth image"
           />
         </Carousel.Item>
         <Carousel.Item>
@@ -62,7 +59,7 @@ const Gallery = ({ data }) => {
             width={900}
             height={600}
             src={S1}
-            alt="first image"
+            alt="fifth image"
           />
         </Carousel.Item>
         <Carousel.Item>
@@ -71,7 +68,7 @@ const Gallery = ({ data }) => {
             width={900}
             height={600}
             src={S2}
-            alt="first image"
+            alt="sixth image"
           />
         </Carousel.Item>
         <Carousel.Item>
@@ -80,7 +77,7 @@ const Gallery = ({ data }) => {
             width={900}
             height={600}
             src={S3}
-            alt="first image"
+            alt="seventh image"
           />
         </Carousel.Item>
         <Carousel.Item>
@@ -89,7 +86,7 @@ const Gallery = ({ data }) => {
             width={900}
             height={600}
             src={S4}
-            alt="first image"
+            alt="eight image"
           />
         </Carousel.Item>
         <Carousel.Item>
@@ -98,7 +95,7 @@ const Gallery = ({ data }) => {
             width={900}
             height={600}
             src={S5}
-            alt="first image"
+            alt="nine image"
           />
         </Carousel.Item>
         <Carousel.Item>
@@ -107,7 +104,7 @@ const Gallery = ({ data }) => {
             width={900}
             height={600}
             src={S6}
-            alt="first image"
+            alt="ten image"
           />
         </Carousel.Item>
         <Carousel.Item>
@@ -116,7 +113,7 @@ const Gallery = ({ data }) => {
             width={900}
             height={600}
             src={S7}
-            alt="first image"
+            alt="11 image"
           />
         </Carousel.Item>
         <Carousel.Item>
@@ -125,7 +122,7 @@ const Gallery = ({ data }) => {
             width={900}
             height={600}
             src={S8}
-            alt="first image"
+            alt="12 image"
           />
         </Carousel.Item>
       </Carousel>

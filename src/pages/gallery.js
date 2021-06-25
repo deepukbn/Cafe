@@ -1,37 +1,15 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
 import SEO from "../components/seo"
 import Gallery from "../components/Home/Gallery"
 import Layout from "../components/layout"
-import BackgroundSection from "../components/Globals/BackgroundSection"
 
-const GalleryPage = ({ data }) => {
+const GalleryPage = () => {
   return (
     <Layout>
       <SEO title="Home" keywords={["gatsby", "application", "react"]} />
-
-      {
-        // <BackgroundSection
-        //   // img={data.img.childImageSharp.fluid}
-        //   title="SCOOPY'S CAFE"
-        //   styleClass="about-background"
-        // />
-      }
       <Gallery />
     </Layout>
   )
 }
-
-export const query = graphql`
-  {
-    img: file(relativePath: { eq: "gallerydee.jpg" }) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-  }
-`
 
 export default GalleryPage

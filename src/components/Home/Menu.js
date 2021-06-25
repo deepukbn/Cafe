@@ -1,7 +1,6 @@
 import React, { Component } from "react"
 import Title from "../Globals/Title"
 import Img from "gatsby-background-image"
-import { FaCartArrowDown } from "react-icons/fa"
 
 const getCategories = items => {
   let tempItems = items.map(items => {
@@ -38,7 +37,7 @@ export default class Menu extends Component {
     if (this.state.items.length > 0) {
       return (
         <section className="menu py-5">
-          <div className="container">
+          <div className="container" style={{ marginTop: "2%" }}>
             <Title title="best of our menu" />
             {/*categories */}
             <div className="row mb-5">

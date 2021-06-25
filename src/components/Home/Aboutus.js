@@ -1,6 +1,5 @@
 import React from "react"
 import Title from "../Globals/Title"
-import Maps from "../../images/Maps.png"
 
 const Aboutus = () => {
   return (
@@ -23,8 +22,8 @@ const Aboutus = () => {
         <div className="container">
           <div className="row">
             <div className="col-10 col-sm-8 mx-auto text-center">
-              <h3>Owned By: </h3>
-              <br></br>
+              <h3>Owned By: Abdul Nizar</h3>
+
               <h3>
                 Address:Scoopy's Cafe 10th Cross, Shankarmutt Road, K R Puram,
                 Hassan
